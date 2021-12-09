@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela de Produtos</title>
+    <link rel="stylesheet" type="text/css" href="formulario.css" media="screen">
+</head>
+<body>
+    <h1>Tabela de Produtos</h1>
+    <main></main>
+        <form>
+
+            <fieldset class="grupo">
+                <!-- Campo do codigo com legenda "codigo" e css de classe "campo" -->
+                <div class="campo">
+                    <label for="codigo"><strong>Codigo</strong></label>
+                    <input type="text" name="codigo" id="codigo" required>
+                </div>
+
+                <!-- Campo do nome com legenda "nome" e css de classe "campo" -->
+                <div class="campo">
+                    <label for="nome"><strong>Nome</strong></label>
+                    <input type="text" name="nome" id="nome" required>
+                </div>
+            </fieldset>
+
+            <!-- Campo de descricao com-->
+            <div class="campo">
+                <label for="descricao"><strong>Descricao</strong></label>
+                <input type="text" name="descricao" id="descricao" required>
+            </div>
+
+            <!-- Campo de preco com-->
+            <div class="campo">
+                <label for="preco"><strong>Preco</strong></label>
+                <input type="range" name="preco" id="preco" required>
+            </div>
+
+
+            <!-- Botão para cadastrar -->
+            <button type="button" onclick="cadastrarProduto()">Cadastrar Produto</button>
+
+
+        </form>
+</body>
+<script src="app.js"></script>
+</html>
