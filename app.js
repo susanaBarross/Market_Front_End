@@ -1,13 +1,12 @@
 let body = document.querySelector("body");
 let main = document.querySelector("main");
 
-/*
 body.onload = function() {
     console.log("Loading o body");
     buscarProdutos();
     //setInterval(buscarProdutos, 5000);
 }
-*/
+
 
 function buscarProdutos() {
     let xhttp = new XMLHttpRequest();

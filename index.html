@@ -9,41 +9,34 @@
 </head>
 <body>
     <h1>Tabela de Produtos</h1>
-    <main></main>
-        <form>
 
+        <form>
             <fieldset class="grupo">
                 <!-- Campo do codigo com legenda "codigo" e css de classe "campo" -->
                 <div class="campo">
-                    <label for="codigo"><strong>Codigo</strong></label>
-                    <input type="text" name="codigo" id="codigo" required>
-                </div>
-
-                <!-- Campo do nome com legenda "nome" e css de classe "campo" -->
-                <div class="campo">
                     <label for="nome"><strong>Nome</strong></label>
                     <input type="text" name="nome" id="nome" required>
+
+                    <label for="descricao"><strong>Descricao</strong></label>
+                    <input type="text" name="descricao" id="descricao" required>
+
+                    <label for="preco"><strong>Preco</strong></label>
+                    <input type="text" name="preco" id="preco" required>
+
+                     <!-- Botão para cadastrar -->
+                     <button type="button" onclick="cadastrarProduto()">Cadastrar Produto</button>
                 </div>
+
             </fieldset>
 
-            <!-- Campo de descricao com-->
-            <div class="campo">
-                <label for="descricao"><strong>Descricao</strong></label>
-                <input type="text" name="descricao" id="descricao" required>
-            </div>
 
-            <!-- Campo de preco com-->
-            <div class="campo">
-                <label for="preco"><strong>Preco</strong></label>
-                <input type="range" name="preco" id="preco" required>
-            </div>
-
-
-            <!-- Botão para cadastrar -->
-            <button type="button" onclick="cadastrarProduto()">Cadastrar Produto</button>
 
 
         </form>
+    <fieldset class="grupo">
+    <h1>Lista de Produtos</h1>
+    <main></main>
+    </fieldset>
 </body>
 <script src="app.js"></script>
 </html>
