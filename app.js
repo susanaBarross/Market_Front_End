@@ -49,8 +49,7 @@ function cadastrarProduto() {
     var xhttp = new XMLHttpRequest();
     xhttp.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
-      //document.getElementById("demo").innerHTML = this.responseText;
-        console.log("Nova entrada");
+      console.log("Nova entrada");
     }
   };
   xhttp.open("POST", "http://127.0.0.1:5000/produtos", true);
