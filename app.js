@@ -4,7 +4,7 @@ let main = document.querySelector("main");
 body.onload = function() {
     console.log("Loading o body");
     buscarProdutos();
-    //setInterval(buscarProdutos, 5000);
+    setInterval(buscarProdutos, 5000);
 }
 
 
